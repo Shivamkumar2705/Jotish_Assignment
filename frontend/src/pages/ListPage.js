@@ -64,7 +64,7 @@ const ListPage = () => {
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 {/* Actions Bar */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
-                    <div className="relative flex-1 max-w-md">
+                    <div className="relative flex-1 max-w-md w-full">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <Search className="h-5 w-5 text-gray-400" />
                         </div>
@@ -76,17 +76,17 @@ const ListPage = () => {
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-col sm:flex-row gap-3">
                         <button
                             onClick={() => navigate('/graph')}
-                            className="flex items-center space-x-2 bg-white border border-gray-200 text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-50 transition shadow-sm"
+                            className="flex items-center justify-center space-x-2 bg-white border border-gray-200 text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-50 transition shadow-sm w-full sm:w-auto"
                         >
                             <BarChart3 size={20} />
                             <span>View Salary Graph</span>
                         </button>
                         <button
                             onClick={() => navigate('/map')}
-                            className="flex items-center space-x-2 bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition shadow-md"
+                            className="flex items-center justify-center space-x-2 bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition shadow-md w-full sm:w-auto"
                         >
                             <MapIcon size={20} />
                             <span>View Cities Map</span>

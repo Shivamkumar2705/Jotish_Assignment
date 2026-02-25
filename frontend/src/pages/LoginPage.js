@@ -29,14 +29,14 @@ const LoginPage = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 px-4">
+        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-4 md:p-6">
             <div className="w-full max-w-md animate-pop-in">
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-8">
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-6 md:p-8">
                     <div className="text-center mb-10">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mb-4">
                             <LogIn className="w-8 h-8 text-indigo-600" />
                         </div>
-                        <h2 className="text-3xl font-bold text-gray-800">Welcome Back</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Welcome Back</h2>
                         <p className="text-gray-500 mt-2">Please login to your account</p>
                     </div>
 

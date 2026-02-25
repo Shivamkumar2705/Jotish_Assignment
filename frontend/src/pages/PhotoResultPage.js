@@ -41,7 +41,7 @@ const PhotoResultPage = () => {
                         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto text-green-600 mb-4">
                             <CheckCircle2 size={32} />
                         </div>
-                        <h1 className="text-3xl font-bold text-gray-800">Photo Captured!</h1>
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Photo Captured!</h1>
                         <p className="text-gray-500 mt-2">The identity has been successfully captured and verified.</p>
                     </div>
 

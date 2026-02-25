@@ -71,7 +71,7 @@ const MapPage = () => {
                 </div>
             </div>
 
-            <div className="flex-1 relative">
+            <div className="flex-1 min-h-[50vh] md:min-h-[80vh] relative">
                 <MapContainer
                     center={[30, 0]}
                     zoom={2}

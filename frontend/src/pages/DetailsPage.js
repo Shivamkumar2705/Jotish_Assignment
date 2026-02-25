@@ -125,7 +125,7 @@ const DetailsPage = () => {
                                     </div>
                                 ) : (
                                     <div className="space-y-6">
-                                        <div className="relative rounded-xl overflow-hidden shadow-inner bg-black aspect-video max-w-lg mx-auto border-4 border-indigo-600/20">
+                                        <div className="relative rounded-xl overflow-hidden shadow-inner bg-black aspect-video w-full max-w-md mx-auto border-4 border-indigo-600/20">
                                             <Webcam
                                                 audio={false}
                                                 ref={webcamRef}
@@ -133,7 +133,7 @@ const DetailsPage = () => {
                                                 videoConstraints={{ facingMode: "user" }}
                                                 className="w-full h-full object-cover"
                                             />
-                                            <div className="absolute inset-0 border-[40px] border-black/40 pointer-events-none rounded-full scale-150"></div>
+                                            <div className="absolute inset-0 border-[20px] md:border-[40px] border-black/40 pointer-events-none rounded-full scale-150"></div>
                                             <div className="absolute bottom-4 left-0 right-0 flex justify-center">
                                                 <div className="bg-indigo-600/80 backdrop-blur-md px-4 py-1 rounded-full text-white text-xs font-bold animate-pulse">
                                                     CAMERA ACTIVE
@@ -141,17 +141,17 @@ const DetailsPage = () => {
                                             </div>
                                         </div>
 
-                                        <div className="flex justify-center space-x-4">
+                                        <div className="flex flex-col sm:flex-row justify-center gap-3">
                                             <button
                                                 onClick={() => setShowCamera(false)}
-                                                className="flex items-center space-x-2 px-6 py-2 rounded-lg text-gray-600 font-medium hover:bg-gray-100 transition"
+                                                className="flex items-center justify-center space-x-2 px-6 py-3 rounded-lg text-gray-600 font-medium hover:bg-gray-100 transition border border-gray-200 w-full sm:w-auto order-2 sm:order-1"
                                             >
                                                 <ArrowLeft size={18} />
                                                 <span>Cancel</span>
                                             </button>
                                             <button
                                                 onClick={capture}
-                                                className="flex items-center space-x-2 px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg transform active:scale-x-95"
+                                                className="flex items-center justify-center space-x-2 px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg transform active:scale-x-95 w-full sm:w-auto order-1 sm:order-2"
                                             >
                                                 <Camera size={22} />
                                                 <span>Capture Photo</span>
