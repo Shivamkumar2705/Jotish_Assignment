@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Jotish Frontend Developer Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, feature-rich React web application built for the Jotish frontend developer assignment. This project demonstrates proficiency in modern React development, API integration, routing, data visualization, and hardware interaction.
 
-## Available Scripts
+## 🚀 Live Demo
+**[Insert your Vercel Live Link Here]**
 
-In the project directory, you can run:
+## 🛠️ Tech Stack
+* **Framework:** React.js
+* **Styling:** Tailwind CSS
+* **Routing:** React Router DOM
+* **HTTP Client:** Axios
+* **Data Visualization:** Recharts (Bar Graph)
+* **Maps:** React Leaflet
+* **Hardware Integration:** React Webcam
 
-### `npm start`
+## ✨ Key Features
+1. **Authentication:** * Secure login page styled with Tailwind CSS.
+   * Hardcoded validation (`Username: testuser` | `Password: Test123`).
+2. **Dashboard & API Integration:**
+   * Fetches user/employee data from the provided Jotish API endpoint.
+   * Displays data in a clean, responsive layout.
+3. **Dynamic Routing & Details:**
+   * Clicking on a list item navigates to a dynamic Details Page showing specific information for that entry.
+4. **Hardware Interaction (Camera):**
+   * Integrated `react-webcam` on the Details Page to allow users to capture a photo using their device's camera.
+   * Successfully redirects and displays the captured image on a dedicated Result Page.
+5. **Data Visualization (Bonus):**
+   * **Salary Graph:** Utilizes `recharts` to plot the salaries of the first 10 employees in an interactive Bar Graph.
+   * **Interactive Map:** Uses `react-leaflet` to visually plot city data from the API response onto a map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Running the Project Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to run the project on your local machine:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Shivamkumar2705/Jotish_Assignment.git](https://github.com/Shivamkumar2705/Jotish_Assignment.git)
